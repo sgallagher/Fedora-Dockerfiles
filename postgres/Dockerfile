@@ -23,6 +23,11 @@ RUN echo "host    all             all             0.0.0.0/0               md5" >
 
 RUN /postgres_user.sh
 
+# If you want to specify the database, username and password, comment out the
+# previous line and uncomment the following one (making appropriate changes).
+# If you do not specify the username or password, it will use the defaults
+# run /postgres_user.sh databasename [username] [password]
+
 EXPOSE 5432
 
 CMD ["/bin/bash", "/start_postgres.sh"]

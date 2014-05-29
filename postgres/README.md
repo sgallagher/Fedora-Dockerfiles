@@ -5,7 +5,9 @@ Fedora dockerfile for PostgreSQL
 
 1.	To build
 
-Copy the sources down and do the build-
+Copy the sources down.
+Optionally edit the Dockerfile to specify a database name, username and default
+password, then do the build:
 
     # docker build -rm -t username/postgresql . |& tee postgres_build.log
 
